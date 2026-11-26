@@ -1,0 +1,310 @@
+{
+  "sources": [
+    {
+      "id": "g20-01",
+      "name": "中国外交部 G20 专题页",
+      "kind": "web_list",
+      "tier": "T1",
+      "interval_minutes": 60,
+      "config": {
+        "url": "https://www.mfa.gov.cn/web/gjhdq_676201/gjhdqzz_681964/ershiguojituan_682134/xgxw_682140/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"t20\"][href$=\".shtml\"]",
+        "allowUrlPrefixes": [
+          "https://www.mfa.gov.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-02",
+      "name": "中国政府网 国际外交要闻",
+      "kind": "web_list",
+      "tier": "T1",
+      "interval_minutes": 60,
+      "config": {
+        "url": "https://www.gov.cn/yaowen/liebiao/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"/content_\"][href$=\".htm\"]",
+        "allowUrlPrefixes": [
+          "https://www.gov.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-03",
+      "name": "财政部官网 财政新闻栏目",
+      "kind": "web_list",
+      "tier": "T1",
+      "interval_minutes": 60,
+      "config": {
+        "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"t20\"][href$=\".htm\"], a[href*=\"t20\"][href$=\".shtml\"]",
+        "allowUrlPrefixes": [
+          "https://www.mof.gov.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-04",
+      "name": "中国人民银行官网 新闻动态",
+      "kind": "web_list",
+      "tier": "T1",
+      "interval_minutes": 60,
+      "config": {
+        "url": "http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/113498/index.html",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"202\"][href*=\".htm\"], a[href*=\"/news/\"][href*=\"202\"]",
+        "allowUrlPrefixes": [
+          "http://www.pbc.gov.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-05",
+      "name": "商务部官网 国际经贸新闻",
+      "kind": "web_list",
+      "tier": "T1",
+      "interval_minutes": 120,
+      "config": {
+        "url": "http://www.mofcom.gov.cn/article/ae/ai/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"202\"][href*=\".htm\"], a[href*=\"/news/\"][href*=\"202\"]",
+        "allowUrlPrefixes": [
+          "http://www.mofcom.gov.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-06",
+      "name": "新华网国际新闻 RSS",
+      "kind": "rss",
+      "tier": "T2",
+      "interval_minutes": 60,
+      "config": {
+        "feedUrl": "http://www.xinhuanet.com/world/news_world.xml"
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-07",
+      "name": "人民网国际频道 RSS",
+      "kind": "rss",
+      "tier": "T2",
+      "interval_minutes": 60,
+      "config": {
+        "feedUrl": "http://world.people.com.cn/GB/412167/index1.xml"
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-08",
+      "name": "央视网国际新闻 RSS",
+      "kind": "rss",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "feedUrl": "http://www.cctv.com/program/rss/02/02/index.xml"
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-09",
+      "name": "央广网国际新闻 RSS",
+      "kind": "rss",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "feedUrl": "http://www.cnr.cn/newscenter/gjxw/index_504031106.xml"
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-10",
+      "name": "光明网国际新闻 RSS",
+      "kind": "rss",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "feedUrl": "https://world.gmw.cn/rss/node_9602.xml"
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-11",
+      "name": "中国新闻网国际新闻 RSS",
+      "kind": "rss",
+      "tier": "T2",
+      "interval_minutes": 60,
+      "config": {
+        "feedUrl": "https://www.chinanews.com.cn/rss/world.xml"
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-12",
+      "name": "中国经济网 国际财经频道",
+      "kind": "web_list",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "url": "http://intl.ce.cn/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"/t20\"][href$=\".shtml\"]",
+        "allowUrlPrefixes": [
+          "http://intl.ce.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-13",
+      "name": "第一财经 国际新闻频道",
+      "kind": "web_list",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "url": "https://www.yicai.com/news/international",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"202\"][href*=\".htm\"], a[href*=\"/news/\"][href*=\"202\"]",
+        "allowUrlPrefixes": [
+          "https://www.yicai.com/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-14",
+      "name": "上海证券报 宏观财经栏目",
+      "kind": "web_list",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "url": "http://www.cnstock.com/news/hgjj/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"202\"][href*=\".htm\"], a[href*=\"/news/\"][href*=\"202\"]",
+        "allowUrlPrefixes": [
+          "http://www.cnstock.com/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-15",
+      "name": "经济参考报 要闻频道",
+      "kind": "web_list",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "url": "http://www.jjckb.cn/",
+        "parseMode": "html",
+        "itemSelector": "a[href$=\"/c.html\"]",
+        "allowUrlPrefixes": [
+          "http://www.jjckb.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-16",
+      "name": "中国社科院世界经济与政治研究所",
+      "kind": "web_list",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "url": "http://www.iwep.cass.cn/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"202\"][href*=\".htm\"], a[href*=\"/news/\"][href*=\"202\"]",
+        "allowUrlPrefixes": [
+          "http://www.iwep.cass.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-17",
+      "name": "国务院发展研究中心",
+      "kind": "web_list",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "url": "https://www.drc.gov.cn/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"202\"][href*=\".htm\"], a[href*=\"/news/\"][href*=\"202\"]",
+        "allowUrlPrefixes": [
+          "https://www.drc.gov.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    },
+    {
+      "id": "g20-18",
+      "name": "中国国际问题研究院",
+      "kind": "web_list",
+      "tier": "T2",
+      "interval_minutes": 120,
+      "config": {
+        "url": "https://www.ciis.org.cn/",
+        "parseMode": "html",
+        "itemSelector": "a[href*=\"/t20\"][href$=\".html\"]",
+        "allowUrlPrefixes": [
+          "https://www.ciis.org.cn/"
+        ],
+        "detail": {
+          "maxFetches": 12
+        },
+        "fetchPublicContent": true
+      },
+      "enabled": true
+    }
+  ]
+}
